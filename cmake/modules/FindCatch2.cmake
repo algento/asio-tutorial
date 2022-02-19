@@ -1,0 +1,7 @@
+if(UNIX)
+    include(/usr/local/lib/cmake/Catch2/Catch2Config.cmake)
+    include(/usr/local/lib/cmake/Catch2/Catch2Targets.cmake)
+else()
+    include(${CMAKE_SOURCE_DIR}/apsim/external/catch2/lib/cmake/Catch2/Catch2Config.cmake)
+    include(${CMAKE_SOURCE_DIR}/apsim/external/catch2/lib/cmake/Catch2/Catch2Targets.cmake)
+endif()
